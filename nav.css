@@ -1,0 +1,584 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body { 
+  font-family: 'Playfair Display', serif; 
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  /* overflow-x: hidden; */
+ 
+}
+.navbarinput:focus{
+  outline: none;
+}
+a{
+  text-decoration: none;
+}
+/* 
+html{
+  overflow-x: hidden;
+} */
+
+/* ------------navbar css------------------ */
+
+/* HEADER CSS STARTED */
+.iconsop a {
+  margin: 0;
+}
+
+#logo.img {
+  width: 100px;
+  height: 100px;
+}
+/* 
+.navbar-section {
+  margin-bottom: 50px;
+  position: fixed;
+
+  z-index: 9999 !important;
+} */
+
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-section {
+    margin-bottom: 50px;
+    /* position: fixed; */
+    background: #fff;
+    z-index: 9999 !important;
+  }
+}
+
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+}
+
+.main-navbar .burger-menu {
+  font-size: 2rem;
+}
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #000 !important;
+  font-size: 1.2em !important;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+
+nav ul li a:hover {
+  font-weight: 400;
+}
+
+.navbar-2-links {
+  margin-left: auto;
+}
+
+.navbar-2-links a {
+  font-size: 0.9rem;
+}
+.iconsop {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 0.9rem !important;
+}
+
+.nav-link {
+  padding: 0 !important;
+  margin: 0 1rem;
+  font-size: 0.9em;
+}
+
+.icons {
+  justify-content: space-between;
+}
+.navul {
+  list-style: none;
+  padding: 0;
+}
+
+nav.navbar.navbar-expand-md.navbar-light {
+  padding: 0;
+}
+
+ul.navbar-nav.ml-auto {
+  margin-left: 0 !important;
+}
+
+.navbar img {
+  width: 100px;
+  height: auto;
+}
+
+/* CUSTOM MODAL CSS */
+/* The Modal (background) */
+.navmodal1 {
+  display: none; /* Hidden by default */
+  /* position: fixed; Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.navmodal2 {
+  display: none; /* Hidden by default */
+  /* position: fixed; Stay in place */
+  z-index: 9999; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.navmodal3 {
+  display: none; /* Hidden by default */
+  /* position: fixed; Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.navmodal-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 27%;
+  margin-right: 0;
+}
+
+.navmodal-content2 {
+  transition: 1s;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  margin-right: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+.navmodal-content3 {
+  transition: 1s;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  margin-right: 0;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0.8rem;
+}
+
+@media screen and (min-width: 1050px) {
+  .navmodal-content3 {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navmodal-content2 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-backdrop {
+    display: none !important;
+  }
+  #myModalDiv {
+    display: none !important;
+  }
+  .modal-dialog {
+    display: none !important;
+  }
+}
+
+/* The Close Button */
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li::marker {
+  color: rgb(161 160 248);
+  font-size: 1.1rem;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
+.quantity select {
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
+.modtext {
+  display: flex;
+  /* height: 3rem; */
+  margin-top: 0.25rem;
+  margin-bottom: 10px;
+}
+.modtext a {
+  background-color: #000;
+  color: #fff !important;
+  /* border-radius: 1rem; */
+}
+
+.modal-body {
+  font-size: 0.7em;
+}
+.imgcontainer {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-2-links {
+    margin: 0;
+  }
+  .iconsop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav-link {
+    margin: 0;
+  }
+  #ic {
+    font-size: 24pt;
+  }
+  #tbr {
+    display: none;
+  }
+  #logo {
+    margin: auto;
+  }
+  i.fa.fa-user.usericon {
+    display: none;
+  }
+  i.fa.fa-search.searchicon {
+    display: block;
+    margin-right: 1rem !important;
+    font-size: 1.3rem !important;
+  }
+  i.fa.fa-shopping-cart.shopping {
+    margin-bottom: 0;
+    margin-left: 0.25rem;
+    margin-right: 1rem !important;
+    font-size: 1.3rem !important;
+  }
+  i.fa.fa-heart {
+    margin-left: 0.25rem;
+    margin-right: 1rem !important;
+    font-size: 1.3rem !important;
+  }
+  .brand {
+    margin-right: auto;
+  }
+
+  .navbar img {
+    width: 80px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  i.fa.fa-user.usericon {
+    display: block;
+  }
+  i.fa.fa-search.searchicon {
+    display: none;
+  }
+  i.fa.fa-shopping-cart.shopping {
+    margin-bottom: 0.85rem;
+  }
+  .navbar-2-links {
+    margin-left: -30px !important;
+  }
+  .brand {
+    font-size: 1.2rem !important;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0 !important;
+    /* padding-left: 0!important; */
+  }
+
+  .navbar img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .fa-heart {
+    font-size: 1.3rem;
+  }
+
+  .fa-shopping-cart {
+    font-size: 1.3rem;
+  }
+
+  .fa-user {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .modal-body {
+    font-size: 10px;
+  }
+  .modal-body img {
+    width: 40px;
+  }
+  .modal-body .container {
+    font-size: 10px !important;
+  }
+  .imgcontainer {
+    padding: 0;
+    padding-left: 8px;
+  }
+  .wimgcontainer img {
+    width: 50px !important;
+    height: auto !important;
+  }
+
+  .wcontent {
+    font-size: 8px;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  .wmain {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .imgcontainer .spimg {
+    width: 60px;
+  }
+  .imgcontainer .row {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .wimgcontainer img {
+    width: 100px !important;
+    height: auto !important;
+  }
+
+  .wcontent {
+    font-size: 10px;
+  }
+}
+
+.navul li a* {
+  font-family: "Playfair Display", serif;
+}
+
+.title {
+  font-size: 0.96rem;
+  /* font-weight: bold; */
+  color: #212121 !important;
+}
+.subtitle {
+  color: #575757 !important;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+input {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* -----my css in navbar--------------- */
+
+.cat {
+  padding-top: 5px;
+}
+
+.navmodal-content2 a {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem !important;
+}
+
+.grey-links li a {
+  font-size: 0.7rem !important;
+  margin-bottom: 1120px !important;
+}
+
+.title-modal3 {
+  font-size: 1rem !important;
+}
+
+.subtitle {
+  font-size: 14px !important;
+}
+
+.navbar-section{
+  width: 100vw;
+}
+
+/* -----------navbar css end--------------- */
+
+/* -----------navbar css end--------------- */
+
+
+
+/* ------------------------ navbar section-------------- */
+
+
+
+
+/* --------------------modal css start------------ */
+
+#navModal8 {
+  font-family: "Roboto", sans-serif !important;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  font-weight: 500;
+}
+
+
+.cart-text {
+  font-family: "Roboto", sans-serif !important;
+}
+
+#navModal8 button i {
+  position: block !important;
+}
+
+#navModal8 .modal-body h4 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.modal-price1 {
+  font-size: 18px;
+  font-weight: 900!important;
+
+}
+.price p {
+  font-weight: 900!important;
+
+  font-size: 20px;
+}
+
+.quantity {
+  margin-top: 10px !important;
+}
+
+.modtext h3 {
+  font-size: 18px !important;
+  font-weight: 900!important;
+}
+
+.modtext .btn {
+  padding: 5px 40px;
+  border-radius: none !important;
+}
+
+/* --------------------modal css end------------ */
+
+
+    #navModal8 .modal-header button{
+      border: none;
+    background: black;
+    color: #fff;
+    }
+
+#navModal8 h3{
+  font-weight: 900;
+  font-size: 25px;
+}
+    /* ----------------flat off coupon fixed css------ */
+
+  
+
+
+
+
+
+
+
+    /* ------------------cart positioning start---------------- */
+.cart-special{
+  position: absolute;
+  top: 83px;
+  right: 0%;
+  bottom: 0;
+ 
+  z-index: 10040;
+
+}
+
+/* .modal-content{
+ 
+} */
+
+@media(max-width:1080px)
+{
+  .cart-special{
+    display: none;
+  }
+}
+
+        /* ------------------cart positioning end---------------- */
